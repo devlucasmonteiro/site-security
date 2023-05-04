@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Security X</title>
+  </head>
+  <body>
+    <!-- <nav>
+      <div class="logo">
+        <img src="/images/icn.svg" alt="">
+      </div>
+    </nav> -->
+
+    <header class="header">
+      <div class="header-container">
+        <div class="header-texto">
+          <h1 class="titulo">
+            Recupere a sua <br />
+            conta do Instagram!
+          </h1>
+          <p class="paragrafo">
+            Foi hackeado? Não se preocupe, nós podemos ajudar você a recuperar
+            sua conta do Instagram rapidamente e de forma segura.
+          </p>
+          <a class="botao-header" href="">Quero saber mais</a>
+        </div>
+
+        <img src="cybersecurity.png" alt="" />
+      </div>
+
+      <div class="video-container">
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/EU-oNG8N0Bbs?controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a class="botao-video" href=""
+          >Quero preencher o formulário e recuperar minha conta</a
+        >
+      </div>
+    </header>
+
+    <section class="icons">
+      <div class="icons-container">
+        <!-- Satisfação -->
+        <div class="icon-box">
+          <div class="icon">
+            <img src="icn.svg" alt="" />
+          </div>
+          <h2>Satisfação</h2>
+          <p>+ De 100 contas de Instagram recuperadas em todo o Brasil</p>
+        </div>
+
+        <!-- atendimento -->
+        <div class="icon-box">
+          <div class="icon">
+            <img src="icn.svg" alt="" />
+          </div>
+          <h2>Atendimento</h2>
+          <p>+ De 100 contas de Instagram recuperadas em todo o Brasil</p>
+        </div>
+        <!-- rapidez -->
+        <div class="icon-box">
+          <div class="icon">
+            <img src="icn.svg" alt="" />
+          </div>
+          <h2>Rapidez</h2>
+          <p>+ De 100 contas de Instagram recuperadas em todo o Brasil</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <div class="formulario-container">
+        <div class="form">
+          <form
+            action="https://formsubmit.co/contato@lucasmonteiro.com.br"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/sucesso.html"
+            />
+
+            <div class="form-header">
+              <h1>
+                Preencha o formulário com seus dados e um de nossos
+                <span>consultores especializados entrará em contato</span>
+              </h1>
+              <!-- <p>Certifique-se de preencher todos os dados corretamente. Nossa equipe entrará <br> em contato através do e-mail ou whatsapp para que possamos dar início ao <br>processo de recuperação de sua conta</p> -->
+            </div>
+
+            <div class="input-group">
+              <div class="input-box">
+                <label for="nome">Nome</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="telefone">WhatsApp</label>
+                <input
+                  id="telefone"
+                  type="tel"
+                  name="telefone"
+                  placeholder="(xx) xxxxx-xxxx"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="user">Link ou @ do Instagram</label>
+                <input
+                  id="user"
+                  name="user"
+                  type="text"
+                  placeholder="@seu.usuario"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="acesso-email"
+                  >Possui acesso ao e-mail da conta?</label
+                >
+                <select class="opcoes" id="acesso-email" name="acesso-email">
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="acesso-telefone"
+                  >Possui acesso ao telefone da conta?</label
+                >
+                <select
+                  class="opcoes"
+                  id="acesso-telefone"
+                  name="acesso-telefone"
+                >
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="tipo-conta">Tipo de conta</label>
+                <select id="tipo-conta" name="tipo-conta">
+                  <option value="">Selecione uma opção</option>
+                  <option value="pessoal">Pessoal</option>
+                  <option value="empresarial">Empresarial</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="foto">Há fotos suas no Instagram?</label>
+                <select id="foto" name="foto">
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="golpe">Estão praticando golpes?</label>
+                <select id="golpe" name="golpe">
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="modelo-aparelho"
+                  >Qual o modelo do seu aparelho?</label
+                >
+                <select id="modelo-aparelho" name="modelo-aparelho">
+                  <option value="">Selecione uma opção</option>
+                  <option value="android">Android</option>
+                  <option value="iphone">Iphone</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="aparelho-acesso"
+                  >Você ainda tem acesso a esse aparelho?</label
+                >
+                <select id="aparelho-acesso" name="aparelho-acesso">
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="segundo-celular"
+                  >Você tem acesso a um 2º celular?</label
+                >
+                <select id="segundo-celular" name="segundo-celular">
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="investir"
+                  >Eu consigo te ajudar a recuperar o seu acesso a sua conta
+                  imediatamente. Você está disposto a investir para contratar o
+                  meu serviço profissional?</label
+                >
+                <select id="investir" name="investir">
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="button">
+              <button>Enviar formulário</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoimentos-container">
+      <div class="depoimentos-titulo">
+        <span>Depoimentos</span>
+        <h2>O que dizem da Security X</h2>
+      </div>
+
+      <div class="depoimento-pai">
+        <div class="depoimento">
+          <img src="perfil.png" alt="" />
+          <h3>José Ribeiro</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+            aliquid necessitatibus consequatur molestiae ad suscipit?
+          </p>
+        </div>
+
+        <div class="depoimento">
+          <img src="perfil.png" alt="" />
+          <h3>José Ribeiro</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+            aliquid necessitatibus consequatur molestiae ad suscipit?
+          </p>
+        </div>
+
+        <div class="depoimento">
+          <img src="perfil.png" alt="" />
+          <h3>José Ribeiro</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+            aliquid necessitatibus consequatur molestiae ad suscipit?
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
